@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDF760B42BF7FCED0028E846 /* FerroviasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF760B32BF7FCED0028E846 /* FerroviasApp.swift */; };
+		DDF760B62BF7FCED0028E846 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF760B52BF7FCED0028E846 /* ContentView.swift */; };
+		DDF760B82BF7FCEF0028E846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF760B72BF7FCEF0028E846 /* Assets.xcassets */; };
+		DDF760BB2BF7FCEF0028E846 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF760BA2BF7FCEF0028E846 /* Preview Assets.xcassets */; };
+		DDF760C52BF7FCEF0028E846 /* FerroviasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF760C42BF7FCEF0028E846 /* FerroviasTests.swift */; };
+		DDF760CF2BF7FCEF0028E846 /* FerroviasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF760CE2BF7FCEF0028E846 /* FerroviasUITests.swift */; };
+		DDF760D12BF7FCEF0028E846 /* FerroviasUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF760D02BF7FCEF0028E846 /* FerroviasUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDF760C12BF7FCEF0028E846 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDF760A82BF7FCED0028E846 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDF760AF2BF7FCED0028E846;
+			remoteInfo = Ferrovias;
+		};
+		DDF760CB2BF7FCEF0028E846 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDF760A82BF7FCED0028E846 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDF760AF2BF7FCED0028E846;
+			remoteInfo = Ferrovias;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DDF760B02BF7FCED0028E846 /* Ferrovias.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ferrovias.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDF760B32BF7FCED0028E846 /* FerroviasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FerroviasApp.swift; sourceTree = "<group>"; };
+		DDF760B52BF7FCED0028E846 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DDF760B72BF7FCEF0028E846 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDF760BA2BF7FCEF0028E846 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DDF760C02BF7FCEF0028E846 /* FerroviasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FerroviasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDF760C42BF7FCEF0028E846 /* FerroviasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FerroviasTests.swift; sourceTree = "<group>"; };
+		DDF760CA2BF7FCEF0028E846 /* FerroviasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FerroviasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDF760CE2BF7FCEF0028E846 /* FerroviasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FerroviasUITests.swift; sourceTree = "<group>"; };
+		DDF760D02BF7FCEF0028E846 /* FerroviasUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FerroviasUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDF760AD2BF7FCED0028E846 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF760BD2BF7FCEF0028E846 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF760C72BF7FCEF0028E846 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDF760A72BF7FCED0028E846 = {
+			isa = PBXGroup;
+			children = (
+				DDF760B22BF7FCED0028E846 /* Ferrovias */,
+				DDF760C32BF7FCEF0028E846 /* FerroviasTests */,
+				DDF760CD2BF7FCEF0028E846 /* FerroviasUITests */,
+				DDF760B12BF7FCED0028E846 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDF760B12BF7FCED0028E846 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDF760B02BF7FCED0028E846 /* Ferrovias.app */,
+				DDF760C02BF7FCEF0028E846 /* FerroviasTests.xctest */,
+				DDF760CA2BF7FCEF0028E846 /* FerroviasUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDF760B22BF7FCED0028E846 /* Ferrovias */ = {
+			isa = PBXGroup;
+			children = (
+				DDF760B32BF7FCED0028E846 /* FerroviasApp.swift */,
+				DDF760B52BF7FCED0028E846 /* ContentView.swift */,
+				DDF760B72BF7FCEF0028E846 /* Assets.xcassets */,
+				DDF760B92BF7FCEF0028E846 /* Preview Content */,
+			);
+			path = Ferrovias;
+			sourceTree = "<group>";
+		};
+		DDF760B92BF7FCEF0028E846 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DDF760BA2BF7FCEF0028E846 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DDF760C32BF7FCEF0028E846 /* FerroviasTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDF760C42BF7FCEF0028E846 /* FerroviasTests.swift */,
+			);
+			path = FerroviasTests;
+			sourceTree = "<group>";
+		};
+		DDF760CD2BF7FCEF0028E846 /* FerroviasUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DDF760CE2BF7FCEF0028E846 /* FerroviasUITests.swift */,
+				DDF760D02BF7FCEF0028E846 /* FerroviasUITestsLaunchTests.swift */,
+			);
+			path = FerroviasUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDF760AF2BF7FCED0028E846 /* Ferrovias */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDF760D42BF7FCEF0028E846 /* Build configuration list for PBXNativeTarget "Ferrovias" */;
+			buildPhases = (
+				DDF760AC2BF7FCED0028E846 /* Sources */,
+				DDF760AD2BF7FCED0028E846 /* Frameworks */,
+				DDF760AE2BF7FCED0028E846 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ferrovias;
+			productName = Ferrovias;
+			productReference = DDF760B02BF7FCED0028E846 /* Ferrovias.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDF760BF2BF7FCEF0028E846 /* FerroviasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDF760D72BF7FCEF0028E846 /* Build configuration list for PBXNativeTarget "FerroviasTests" */;
+			buildPhases = (
+				DDF760BC2BF7FCEF0028E846 /* Sources */,
+				DDF760BD2BF7FCEF0028E846 /* Frameworks */,
+				DDF760BE2BF7FCEF0028E846 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDF760C22BF7FCEF0028E846 /* PBXTargetDependency */,
+			);
+			name = FerroviasTests;
+			productName = FerroviasTests;
+			productReference = DDF760C02BF7FCEF0028E846 /* FerroviasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DDF760C92BF7FCEF0028E846 /* FerroviasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDF760DA2BF7FCEF0028E846 /* Build configuration list for PBXNativeTarget "FerroviasUITests" */;
+			buildPhases = (
+				DDF760C62BF7FCEF0028E846 /* Sources */,
+				DDF760C72BF7FCEF0028E846 /* Frameworks */,
+				DDF760C82BF7FCEF0028E846 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDF760CC2BF7FCEF0028E846 /* PBXTargetDependency */,
+			);
+			name = FerroviasUITests;
+			productName = FerroviasUITests;
+			productReference = DDF760CA2BF7FCEF0028E846 /* FerroviasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDF760A82BF7FCED0028E846 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					DDF760AF2BF7FCED0028E846 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					DDF760BF2BF7FCEF0028E846 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = DDF760AF2BF7FCED0028E846;
+					};
+					DDF760C92BF7FCEF0028E846 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = DDF760AF2BF7FCED0028E846;
+					};
+				};
+			};
+			buildConfigurationList = DDF760AB2BF7FCED0028E846 /* Build configuration list for PBXProject "Ferrovias" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDF760A72BF7FCED0028E846;
+			productRefGroup = DDF760B12BF7FCED0028E846 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDF760AF2BF7FCED0028E846 /* Ferrovias */,
+				DDF760BF2BF7FCEF0028E846 /* FerroviasTests */,
+				DDF760C92BF7FCEF0028E846 /* FerroviasUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDF760AE2BF7FCED0028E846 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF760BB2BF7FCEF0028E846 /* Preview Assets.xcassets in Resources */,
+				DDF760B82BF7FCEF0028E846 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF760BE2BF7FCEF0028E846 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF760C82BF7FCEF0028E846 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDF760AC2BF7FCED0028E846 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF760B62BF7FCED0028E846 /* ContentView.swift in Sources */,
+				DDF760B42BF7FCED0028E846 /* FerroviasApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF760BC2BF7FCEF0028E846 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF760C52BF7FCEF0028E846 /* FerroviasTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF760C62BF7FCEF0028E846 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF760D12BF7FCEF0028E846 /* FerroviasUITestsLaunchTests.swift in Sources */,
+				DDF760CF2BF7FCEF0028E846 /* FerroviasUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDF760C22BF7FCEF0028E846 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDF760AF2BF7FCED0028E846 /* Ferrovias */;
+			targetProxy = DDF760C12BF7FCEF0028E846 /* PBXContainerItemProxy */;
+		};
+		DDF760CC2BF7FCEF0028E846 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDF760AF2BF7FCED0028E846 /* Ferrovias */;
+			targetProxy = DDF760CB2BF7FCEF0028E846 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DDF760D22BF7FCEF0028E846 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DDF760D32BF7FCEF0028E846 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDF760D52BF7FCEF0028E846 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Ferrovias/Preview Content\"";
+				DEVELOPMENT_TEAM = 73D7XMRQAB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = defee.Ferrovias;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDF760D62BF7FCEF0028E846 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Ferrovias/Preview Content\"";
+				DEVELOPMENT_TEAM = 73D7XMRQAB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = defee.Ferrovias;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DDF760D82BF7FCEF0028E846 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73D7XMRQAB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = defee.FerroviasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ferrovias.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ferrovias";
+			};
+			name = Debug;
+		};
+		DDF760D92BF7FCEF0028E846 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73D7XMRQAB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = defee.FerroviasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ferrovias.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ferrovias";
+			};
+			name = Release;
+		};
+		DDF760DB2BF7FCEF0028E846 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73D7XMRQAB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = defee.FerroviasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ferrovias;
+			};
+			name = Debug;
+		};
+		DDF760DC2BF7FCEF0028E846 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73D7XMRQAB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = defee.FerroviasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ferrovias;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDF760AB2BF7FCED0028E846 /* Build configuration list for PBXProject "Ferrovias" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDF760D22BF7FCEF0028E846 /* Debug */,
+				DDF760D32BF7FCEF0028E846 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDF760D42BF7FCEF0028E846 /* Build configuration list for PBXNativeTarget "Ferrovias" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDF760D52BF7FCEF0028E846 /* Debug */,
+				DDF760D62BF7FCEF0028E846 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDF760D72BF7FCEF0028E846 /* Build configuration list for PBXNativeTarget "FerroviasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDF760D82BF7FCEF0028E846 /* Debug */,
+				DDF760D92BF7FCEF0028E846 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDF760DA2BF7FCEF0028E846 /* Build configuration list for PBXNativeTarget "FerroviasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDF760DB2BF7FCEF0028E846 /* Debug */,
+				DDF760DC2BF7FCEF0028E846 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDF760A82BF7FCED0028E846 /* Project object */;
+}
