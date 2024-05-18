@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A7355FFC72BADDD54D44E25 /* Pods_FerroviasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CD991D4CB88F281F5D9937E /* Pods_FerroviasTests.framework */; };
+		8A4C8DB9DCF2E7C7078E8511 /* Pods_Ferrovias.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EAE2E99A674B53CF19F80F /* Pods_Ferrovias.framework */; };
+		DDA1B1FFAF84DBA7928A45FA /* Pods_Ferrovias_FerroviasUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21CE57BC60370A83BD97C1D2 /* Pods_Ferrovias_FerroviasUITests.framework */; };
 		DDF760B42BF7FCED0028E846 /* FerroviasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF760B32BF7FCED0028E846 /* FerroviasApp.swift */; };
 		DDF760B62BF7FCED0028E846 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF760B52BF7FCED0028E846 /* ContentView.swift */; };
 		DDF760B82BF7FCEF0028E846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF760B72BF7FCEF0028E846 /* Assets.xcassets */; };
@@ -34,6 +37,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18BA9635BE9E24370C7CF24F /* Pods-FerroviasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FerroviasTests.debug.xcconfig"; path = "Target Support Files/Pods-FerroviasTests/Pods-FerroviasTests.debug.xcconfig"; sourceTree = "<group>"; };
+		19EAE2E99A674B53CF19F80F /* Pods_Ferrovias.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ferrovias.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B850BDFA34C9E8EF2CDD8F7 /* Pods-Ferrovias.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ferrovias.debug.xcconfig"; path = "Target Support Files/Pods-Ferrovias/Pods-Ferrovias.debug.xcconfig"; sourceTree = "<group>"; };
+		21CE57BC60370A83BD97C1D2 /* Pods_Ferrovias_FerroviasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ferrovias_FerroviasUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		398F50F6C597BD0D93E7B931 /* Pods-FerroviasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FerroviasTests.release.xcconfig"; path = "Target Support Files/Pods-FerroviasTests/Pods-FerroviasTests.release.xcconfig"; sourceTree = "<group>"; };
+		5CD991D4CB88F281F5D9937E /* Pods_FerroviasTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FerroviasTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94E6FF3E3337E8B1E1EE10FE /* Pods-Ferrovias-FerroviasUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ferrovias-FerroviasUITests.debug.xcconfig"; path = "Target Support Files/Pods-Ferrovias-FerroviasUITests/Pods-Ferrovias-FerroviasUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C308F9F486F5F00E2B5D7D3 /* Pods-Ferrovias.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ferrovias.release.xcconfig"; path = "Target Support Files/Pods-Ferrovias/Pods-Ferrovias.release.xcconfig"; sourceTree = "<group>"; };
+		B33030CCB07D7311AA651B08 /* Pods-Ferrovias-FerroviasUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ferrovias-FerroviasUITests.release.xcconfig"; path = "Target Support Files/Pods-Ferrovias-FerroviasUITests/Pods-Ferrovias-FerroviasUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DD900DBB2BF806B300F5984B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DDF760B02BF7FCED0028E846 /* Ferrovias.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ferrovias.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDF760B32BF7FCED0028E846 /* FerroviasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FerroviasApp.swift; sourceTree = "<group>"; };
 		DDF760B52BF7FCED0028E846 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A4C8DB9DCF2E7C7078E8511 /* Pods_Ferrovias.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A7355FFC72BADDD54D44E25 /* Pods_FerroviasTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,12 +80,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDA1B1FFAF84DBA7928A45FA /* Pods_Ferrovias_FerroviasUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6342085A363D2FD56E1B0C7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19EAE2E99A674B53CF19F80F /* Pods_Ferrovias.framework */,
+				21CE57BC60370A83BD97C1D2 /* Pods_Ferrovias_FerroviasUITests.framework */,
+				5CD991D4CB88F281F5D9937E /* Pods_FerroviasTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DDF760A72BF7FCED0028E846 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +104,8 @@
 				DDF760C32BF7FCEF0028E846 /* FerroviasTests */,
 				DDF760CD2BF7FCEF0028E846 /* FerroviasUITests */,
 				DDF760B12BF7FCED0028E846 /* Products */,
+				DEBF3CCB36CB2A14D5BD00A4 /* Pods */,
+				6342085A363D2FD56E1B0C7A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +122,7 @@
 		DDF760B22BF7FCED0028E846 /* Ferrovias */ = {
 			isa = PBXGroup;
 			children = (
+				DD900DBB2BF806B300F5984B /* Info.plist */,
 				DDF760B32BF7FCED0028E846 /* FerroviasApp.swift */,
 				DDF760B52BF7FCED0028E846 /* ContentView.swift */,
 				DDF760B72BF7FCEF0028E846 /* Assets.xcassets */,
@@ -127,6 +156,19 @@
 			path = FerroviasUITests;
 			sourceTree = "<group>";
 		};
+		DEBF3CCB36CB2A14D5BD00A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B850BDFA34C9E8EF2CDD8F7 /* Pods-Ferrovias.debug.xcconfig */,
+				9C308F9F486F5F00E2B5D7D3 /* Pods-Ferrovias.release.xcconfig */,
+				94E6FF3E3337E8B1E1EE10FE /* Pods-Ferrovias-FerroviasUITests.debug.xcconfig */,
+				B33030CCB07D7311AA651B08 /* Pods-Ferrovias-FerroviasUITests.release.xcconfig */,
+				18BA9635BE9E24370C7CF24F /* Pods-FerroviasTests.debug.xcconfig */,
+				398F50F6C597BD0D93E7B931 /* Pods-FerroviasTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDF760D42BF7FCEF0028E846 /* Build configuration list for PBXNativeTarget "Ferrovias" */;
 			buildPhases = (
+				A3C37A78C2BF918B6F1FE086 /* [CP] Check Pods Manifest.lock */,
 				DDF760AC2BF7FCED0028E846 /* Sources */,
 				DDF760AD2BF7FCED0028E846 /* Frameworks */,
 				DDF760AE2BF7FCED0028E846 /* Resources */,
+				B422E183A19A26287BF37FCE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDF760D72BF7FCEF0028E846 /* Build configuration list for PBXNativeTarget "FerroviasTests" */;
 			buildPhases = (
+				DDC9429A02C6C25D861A151A /* [CP] Check Pods Manifest.lock */,
 				DDF760BC2BF7FCEF0028E846 /* Sources */,
 				DDF760BD2BF7FCEF0028E846 /* Frameworks */,
 				DDF760BE2BF7FCEF0028E846 /* Resources */,
@@ -169,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDF760DA2BF7FCEF0028E846 /* Build configuration list for PBXNativeTarget "FerroviasUITests" */;
 			buildPhases = (
+				3A87B33EB88F54F7C299DEF4 /* [CP] Check Pods Manifest.lock */,
 				DDF760C62BF7FCEF0028E846 /* Sources */,
 				DDF760C72BF7FCEF0028E846 /* Frameworks */,
 				DDF760C82BF7FCEF0028E846 /* Resources */,
+				0C20C75C83C3D65C9C536FF4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,6 +262,9 @@
 				Base,
 			);
 			mainGroup = DDF760A72BF7FCED0028E846;
+			packageReferences = (
+				DDF760DD2BF7FD710028E846 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = DDF760B12BF7FCED0028E846 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -251,6 +301,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C20C75C83C3D65C9C536FF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ferrovias-FerroviasUITests/Pods-Ferrovias-FerroviasUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ferrovias-FerroviasUITests/Pods-Ferrovias-FerroviasUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ferrovias-FerroviasUITests/Pods-Ferrovias-FerroviasUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A87B33EB88F54F7C299DEF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ferrovias-FerroviasUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3C37A78C2BF918B6F1FE086 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ferrovias-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B422E183A19A26287BF37FCE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ferrovias/Pods-Ferrovias-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ferrovias/Pods-Ferrovias-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ferrovias/Pods-Ferrovias-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDC9429A02C6C25D861A151A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FerroviasTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DDF760AC2BF7FCED0028E846 /* Sources */ = {
@@ -332,7 +485,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -395,7 +548,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -416,6 +569,7 @@
 		};
 		DDF760D52BF7FCEF0028E846 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B850BDFA34C9E8EF2CDD8F7 /* Pods-Ferrovias.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -425,6 +579,7 @@
 				DEVELOPMENT_TEAM = 73D7XMRQAB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ferrovias/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -445,6 +600,7 @@
 		};
 		DDF760D62BF7FCEF0028E846 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C308F9F486F5F00E2B5D7D3 /* Pods-Ferrovias.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -454,6 +610,7 @@
 				DEVELOPMENT_TEAM = 73D7XMRQAB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ferrovias/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -474,6 +631,7 @@
 		};
 		DDF760D82BF7FCEF0028E846 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18BA9635BE9E24370C7CF24F /* Pods-FerroviasTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +652,7 @@
 		};
 		DDF760D92BF7FCEF0028E846 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 398F50F6C597BD0D93E7B931 /* Pods-FerroviasTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -514,6 +673,7 @@
 		};
 		DDF760DB2BF7FCEF0028E846 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94E6FF3E3337E8B1E1EE10FE /* Pods-Ferrovias-FerroviasUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +692,7 @@
 		};
 		DDF760DC2BF7FCEF0028E846 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B33030CCB07D7311AA651B08 /* Pods-Ferrovias-FerroviasUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -588,6 +749,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DDF760DD2BF7FD710028E846 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = DDF760A82BF7FCED0028E846 /* Project object */;
 }

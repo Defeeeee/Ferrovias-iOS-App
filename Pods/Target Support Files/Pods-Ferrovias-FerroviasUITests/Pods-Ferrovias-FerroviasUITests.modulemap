@@ -1,0 +1,6 @@
+framework module Pods_Ferrovias_FerroviasUITests {
+  umbrella header "Pods-Ferrovias-FerroviasUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
