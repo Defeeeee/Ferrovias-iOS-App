@@ -1,3 +1,4 @@
+
 import SwiftUI
 import SwiftSoup
 
@@ -7,18 +8,35 @@ struct DepartureGroup: Identifiable, Hashable {
     var estimatedTimes: [String]
 }
 
+struct StartupScreen: View {
+    @Binding var isLoading: Bool
+    @Binding var companyLogo: Image?
+
+    var body: some View {
+        ZStack {
+            Color.ferro
+            if let companyLogo = companyLogo {
+                companyLogo
+                    .resizable()
+                    .scaledToFit()
+            } else {
+                ProgressView()
+            }
+        }
+        .ignoresSafeArea()
+    }
+}
+
 struct ContentView: View {
     @State private var retiroDepartures: [DepartureGroup] = []
     @State private var villaRosaDepartures: [DepartureGroup] = []
-    @State private var isLoading = false
+    @State private var isLoading = true
     @State private var errorMessage: String?
     @State private var companyLogo: Image?
-
     @State private var selectedStation: Station = .retiro
 
     enum Station: String, CaseIterable, Identifiable {
         case retiro = "Retiro"
-        case villaAdelina = "Villa Adelina"
         case saldias = "Saldias"
         case ciudadUniversitaria = "Ciudad Universitaria"
         case ADelValle = "A. del Valle"
@@ -26,6 +44,7 @@ struct ContentView: View {
         case florida = "Florida"
         case munro = "Munro"
         case carapachay = "Carapachay"
+        case villaAdelina = "Villa Adelina"
         case boulogne = "Boulogne Sur Mer"
         case AMontes = "A. Montes"
         case donTorcuato = "Don Torcuato"
@@ -40,9 +59,9 @@ struct ContentView: View {
         case DelViso = "Del Viso"
         case CGrierson = "Cecilia Grierson"
         case VRosa = "Villa Rosa"
-        
+
         var id: String { self.rawValue }
-        
+
         var idEst: Int {
             switch self {
             case .villaAdelina: return 90
@@ -71,53 +90,72 @@ struct ContentView: View {
             }
         }
     }
-
+    
     var body: some View {
-        NavigationView {
-            VStack(alignment: .center) {
-                if let companyLogo = companyLogo {
-                    companyLogo
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 100)
-                        .padding()
-                }
-                
-                Picker("Station", selection: $selectedStation) {
-                    ForEach(Station.allCases) { station in
-                        Text(station.rawValue).tag(station)
-                    }
-                }
-                .pickerStyle(.menu)
-                .onChange(of: selectedStation) { _ in
-                                    fetchTrainData()
+           ZStack {
+               if isLoading {
+                   StartupScreen(isLoading: $isLoading, companyLogo: $companyLogo)
+               } else {
+                   NavigationView {
+                       VStack(alignment: .center, spacing: 0) { // <-- No spacing in VStack
+                           ZStack {
+                               Color.ferro.ignoresSafeArea()
+                               VStack(alignment: .center, spacing: 8) { // <-- Adjust spacing as needed
+                                   Image("Logo")
+                                       .resizable()
+                                       .scaledToFit()
+                                       .frame(height: 80) // <-- Reduced logo height
+
+                                   Picker("Station", selection: $selectedStation) {
+                                       ForEach(Station.allCases) { station in
+                                           Text(station.rawValue).tag(station)
+                                               .foregroundColor(.black)
+                                       }
+                                   }
+                                   .pickerStyle(.menu)
+                                   .padding(.horizontal)
+                                   .background(
+                                       RoundedRectangle(cornerRadius: 10)
+                                        .fill(Color.white.opacity(0.2)) // Semi-transparent gray background       // Add a subtle shadow
+                                   )
+                                   .foregroundColor(.white) // Set text color to white
+                                   .font(.headline)
+                                   .onChange(of: selectedStation) { _ in
+                                       fetchTrainData()
+                                   }
+                               }
+                               .padding(.top, 20) // Add padding to the top of the VStack
+                           }
+                           .frame(maxHeight: 200) // <-- Set a max height for the ZStack
+
+                           if isLoading {
+                               ProgressView()
+                           } else if let errorMessage = errorMessage {
+                               Text("Error: \(errorMessage)")
+                                   .foregroundColor(.red)
+                           } else {
+                               List {
+                                Section(header: Text("Retiro")) {
+                                    ForEach(retiroDepartures) { group in
+                                        DepartureGroupView(group: group)
+                                    }
                                 }
-                
-                if isLoading {
-                    ProgressView()
-                } else if let errorMessage = errorMessage {
-                    Text("Error: \(errorMessage)")
-                        .foregroundColor(.red)
-                } else {
-                    List {
-                        Section(header: Text("Retiro")) {
-                            ForEach(retiroDepartures) { group in
-                                DepartureGroupView(group: group)
-                            }
-                        }
-                        Section(header: Text("Villa Rosa")) {
-                            ForEach(villaRosaDepartures) { group in
-                                DepartureGroupView(group: group)
+                                Section(header: Text("Villa Rosa")) {
+                                    ForEach(villaRosaDepartures) { group in
+                                        DepartureGroupView(group: group)
+                                    }
+                                }
                             }
                         }
                     }
+                    .navigationTitle("Estación \(selectedStation.rawValue)")
+                    .navigationBarTitleDisplayMode(.inline)
                 }
             }
-            .navigationTitle("Estación \(selectedStation.rawValue)")
-            .onAppear {
-                fetchTrainData()
-                fetchCompanyLogo()
-            }
+        }
+        .onAppear {
+            fetchTrainData()
+            fetchCompanyLogo()
         }
     }
     
@@ -153,28 +191,24 @@ struct ContentView: View {
                 let doc = try SwiftSoup.parse(html)
                 let rows = try doc.select("table#table_main_box table#table_main tr")
 
-                var departures: [DepartureGroup] = [] // Single array for all departures
+                var departures: [DepartureGroup] = []
                 for row in rows {
                     if let destinationCell = try? row.select("td.tdEst").first(),
                        let destination = try? destinationCell.text(),
                        !destination.isEmpty {
-                        
-                        // Check if destination already exists
+
                         if let index = departures.firstIndex(where: { $0.destination == destination }) {
-                            // If so, add the estimated time to the existing departure
                             if let estimatedTime = try? row.select("td.tdEst.tdEstr.tdflecha").text(), !estimatedTime.isEmpty {
                                 departures[index].estimatedTimes.append(estimatedTime)
                             }
                         } else {
-                            // If not, create a new DepartureGroup
                             let estimatedTime = try row.select("td.tdEst.tdEstr.tdflecha").text()
                             departures.append(DepartureGroup(destination: destination, estimatedTimes: [estimatedTime]))
                         }
                     }
                 }
 
-                // Split into Retiro and Villa Rosa after parsing
-                retiroDepartures = departures.filter { $0.destination.contains("RETIRO") } // Case-insensitive filtering
+                retiroDepartures = departures.filter { $0.destination.contains("RETIRO") }
                 villaRosaDepartures = departures.filter { !$0.destination.contains("RETIRO") }
 
                 DispatchQueue.main.async {
@@ -204,7 +238,7 @@ struct ContentView: View {
             }
 
             DispatchQueue.main.async {
-                self.companyLogo = Image(uiImage: uiImage)
+                self.companyLogo = Image("Logo")
             }
         }.resume()
     }
@@ -220,6 +254,7 @@ struct DepartureGroupView: View {
             ForEach(group.estimatedTimes, id: \.self) { time in
                 Text(time)
             }
+
         }
     }
 }
@@ -229,4 +264,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
