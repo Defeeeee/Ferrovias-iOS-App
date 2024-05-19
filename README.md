@@ -34,6 +34,9 @@ This SwiftUI app provides real-time departure information for trains on the Ferr
 
 [Federico Diaz Nemeth](https://github.com/Defeeeee)
 
+## Known Bugs
+ - Due to the trains sorting logic, trains departing from a station like "Villa Rosa" or "Grand Bourg" with destination "Boulogne Sur Mer" will fall onto the "Villa Rosa" Category
+
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
