@@ -159,26 +159,7 @@ struct ContentView: View {
                                .padding(.top, 20)
                                
                            }
-                           .frame(maxHeight: 150)
-                           
-                           ZStack {
-                                                       // Background color for the refresh section
-                                                       Color.ferro.ignoresSafeArea()
-                                                       
-                                                       HStack {
-                                                           // Spacer() // Push the refresh button and text to the right
-                                                           Button(action: {
-                                                               fetchTrainData()
-                                                           }) {
-                                                               Image(systemName: "arrow.clockwise")
-                                                                   .font(.title2) // Adjust font size as needed
-                                                                   .foregroundColor(.white)
-                                                           }
-                                                           .buttonStyle(.borderedProminent)
-                                                        
-                                                       }
-                                                   }
-                                                   .frame(maxHeight: 60)
+                           .frame(maxHeight: 170)
 
                            if isLoading { // Display a loading indicator while fetching data
                                ProgressView()
@@ -197,7 +178,9 @@ struct ContentView: View {
                                         DepartureGroupView(group: group)
                                     }
                                 }
-                            }
+                               }.refreshable {
+                                   fetchTrainData(isSwipe: true)
+                               }
                         }
                         Spacer() // Push the text to the bottom by adding a Spacer before it
 
@@ -218,11 +201,14 @@ struct ContentView: View {
         }
     }
     
-    func fetchTrainData() { // Fetch train data from the server
-        isLoading = true
+    func fetchTrainData(isSwipe: Bool = false) {
+        if (!isSwipe) {
+            isLoading = true
+        }
+        
         errorMessage = nil
 
-        guard let url = URL(string: "http://proximostrenes.ferrovias.com.ar/estaciones.asp") else { // Create a URL object from the URL string
+        guard let url = URL(string: "http://proximostrenes.ferrovias.com.ar/estaciones.asp") else {
             errorMessage = "Invalid URL"
             isLoading = false
             return
@@ -230,57 +216,60 @@ struct ContentView: View {
 
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        request.httpBody = "idEst=\(selectedStation.idEst)&adm=1".data(using: .utf8) // Set the HTTP body with the selected station ID
+        request.httpBody = "idEst=\(selectedStation.idEst)&adm=1".data(using: .utf8)
 
         URLSession.shared.dataTask(with: request) { data, _, error in
             defer { isLoading = false }
-            
+
             if let error = error {
-                errorMessage = "Network error: \(error.localizedDescription)" // Display an error message if a network error occurs
+                errorMessage = "Network error: \(error.localizedDescription)"
                 return
             }
- 
-            guard let data = data, // Check if data is not nil
-                  let html = String(data: data, encoding: .utf8) else { // Convert the data to a UTF-8 string
+
+            guard let data = data, let html = String(data: data, encoding: .utf8) else {
                 errorMessage = "Invalid data received"
                 return
             }
 
             do {
-                let doc = try SwiftSoup.parse(html) // Parse the HTML data using SwiftSoup
-                let rows = try doc.select("table#table_main_box table#table_main tr") // Select the table rows containing the train data (table#table_main_box table#table_main tr)
+                let doc = try SwiftSoup.parse(html)
+                let rows = try doc.select("table#table_main_box table#table_main tr")
 
-                var departures: [DepartureGroup] = [] // Create an empty array to store the departure groups
+                var departures: [DepartureGroup] = []
                 for row in rows {
-                    if let destinationCell = try? row.select("td.tdEst").first(), // Select the destination cell
+                    if let destinationCell = try? row.select("td.tdEst").first(),
                        let destination = try? destinationCell.text(),
-                       !destination.isEmpty { // Get the destination name and check if it's not empty
+                       !destination.isEmpty,
+                       !destination.contains("nbsp") {
 
-                        if let index = departures.firstIndex(where: { $0.destination == destination }) { // Check if the destination already exists in the departures array
-                            if let estimatedTime = try? row.select("td.tdEst.tdEstr.tdflecha").text(), !estimatedTime.isEmpty { // Get the estimated departure time
-                                departures[index].estimatedTimes.append(estimatedTime) // Append the estimated time to the existing group
+                        if let index = departures.firstIndex(where: { $0.destination == destination }) {
+                            if let estimatedTime = try? row.select("td.tdEst.tdEstr.tdflecha").text(), !estimatedTime.isEmpty {
+                                departures[index].estimatedTimes.append(estimatedTime)
                             }
                         } else {
-                            let estimatedTime = try row.select("td.tdEst.tdEstr.tdflecha").text() // Get the estimated departure time
-                            departures.append(DepartureGroup(destination: destination, estimatedTimes: [estimatedTime])) // Create a new departure group
+                            let estimatedTime = try row.select("td.tdEst.tdEstr.tdflecha").text()
+                            departures.append(DepartureGroup(destination: destination, estimatedTimes: [estimatedTime]))
                         }
                     }
                 }
 
-                retiroDepartures = departures.filter { $0.destination.contains("RETIRO") } // Filter the departures for Retiro
-                villaRosaDepartures = departures.filter { !$0.destination.contains("RETIRO") } // Filter the departures for Villa Rosa
+                // Filter out empty departure groups
+                retiroDepartures = departures.filter { !$0.estimatedTimes.isEmpty && $0.destination.contains("RETIRO") }
+                villaRosaDepartures = departures.filter { !$0.estimatedTimes.isEmpty && !$0.destination.contains("RETIRO") }
+                
+                // Update the last refresh time after fetching data (now outside the if/else)
+                DispatchQueue.main.async {
+                    let dateFormatter = DateFormatter()
+                    dateFormatter.dateFormat = "HH:mm:ss"
+                    self.lastRefreshTime = dateFormatter.string(from: Date())
 
-                DispatchQueue.main.async { // Update the UI on the main thread
+                    // ... (Update UI with fetched data)
                     self.retiroDepartures = retiroDepartures
                     self.villaRosaDepartures = villaRosaDepartures
                 }
-            } catch { // Catch any parsing errors
+            } catch {
                 errorMessage = "Error parsing data: \(error.localizedDescription)"
             }
-            DispatchQueue.main.async {
-                let dateFormatter = DateFormatter()
-                dateFormatter.dateFormat = "HH:mm:ss" // Choose your desired time format
-                self.lastRefreshTime = dateFormatter.string(from: Date()) }
         }.resume()
     }
 
