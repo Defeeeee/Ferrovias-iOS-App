@@ -1,3 +1,4 @@
 # Ignore CocoaPods
 Pods/
 Podfile.lock
+*.xcbkptlist
