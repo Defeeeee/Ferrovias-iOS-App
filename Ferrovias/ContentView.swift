@@ -203,7 +203,7 @@ struct ContentView: View {
 
                                                    // Display the last refresh time at the bottom
                                                    Text("Updated: \(lastRefreshTime)")
-                                                       .foregroundColor(.white)
+                               .foregroundColor(colorScheme == .dark ? .white : .black)
                                                        .padding()
                     }
                     .navigationTitle("Estación \(selectedStation.rawValue)") // Set the navigation title to the selected station
