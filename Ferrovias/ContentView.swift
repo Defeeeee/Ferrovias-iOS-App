@@ -22,7 +22,7 @@ struct StartupScreen: View {
 
     var body: some View {
         ZStack {
-            Color.ferro // 
+            Color.ferro //
             if let companyLogo = companyLogo { // if companyLogo is not nil, display the logo
                 companyLogo
                     .resizable()
@@ -52,8 +52,10 @@ struct ContentView: View {
     @State private var companyLogo: Image?
 
     @State private var selectedStation: Station = .retiro // Set the default selected station to Retiro
+    
+    @State private var lastRefreshTime: String = ""
 
-    /* 
+    /*
      * The Station enum represents the available train stations.
      * Each station has a name and an associated ID.
      */
@@ -113,7 +115,7 @@ struct ContentView: View {
         }
     }
     
-    /* 
+    /*
      * The body property defines the view's layout and behavior.
      * It contains a ZStack with two main components: the StartupScreen and the main content.
      */
@@ -139,8 +141,8 @@ struct ContentView: View {
                                                .foregroundColor(.black)
                                        }
                                    }
-                                   .pickerStyle(.menu) 
-                                   .padding(.horizontal) 
+                                   .pickerStyle(.menu)
+                                   .padding(.horizontal)
                                    .background(
                                        RoundedRectangle(cornerRadius: 10)
                                         .fill(Color.white.opacity(0.2))
@@ -149,11 +151,15 @@ struct ContentView: View {
                                    .font(.headline)
                                    .onChange(of: selectedStation) { _ in
                                        fetchTrainData()
+                                       
                                    }
                                }
                                .padding(.top, 20)
+                               
                            }
-                           .frame(maxHeight: 200)
+                           .frame(maxHeight: 150)
+                           
+                           
 
                            if isLoading { // Display a loading indicator while fetching data
                                ProgressView()
@@ -174,9 +180,16 @@ struct ContentView: View {
                                 }
                             }
                         }
+                        Spacer() // Push the text to the bottom by adding a Spacer before it
+
+                                                   // Display the last refresh time at the bottom
+                                                   Text("Updated: \(lastRefreshTime)")
+                                                       .foregroundColor(.white)
+                                                       .padding()
                     }
                     .navigationTitle("Estación \(selectedStation.rawValue)") // Set the navigation title to the selected station
                     .navigationBarTitleDisplayMode(.inline) // Set the navigation title display mode to inline for smaller titles
+                    
                 }
             }
         }
@@ -225,7 +238,7 @@ struct ContentView: View {
                        !destination.isEmpty { // Get the destination name and check if it's not empty
 
                         if let index = departures.firstIndex(where: { $0.destination == destination }) { // Check if the destination already exists in the departures array
-                            if let estimatedTime = try? row.select("td.tdEst.tdEstr.tdflecha").text(), !estimatedTime.is Empty { // Get the estimated departure time
+                            if let estimatedTime = try? row.select("td.tdEst.tdEstr.tdflecha").text(), !estimatedTime.isEmpty { // Get the estimated departure time
                                 departures[index].estimatedTimes.append(estimatedTime) // Append the estimated time to the existing group
                             }
                         } else {
@@ -245,6 +258,10 @@ struct ContentView: View {
             } catch { // Catch any parsing errors
                 errorMessage = "Error parsing data: \(error.localizedDescription)"
             }
+            DispatchQueue.main.async {
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "HH:mm:ss" // Choose your desired time format
+                self.lastRefreshTime = dateFormatter.string(from: Date()) }
         }.resume()
     }
 
@@ -267,7 +284,7 @@ struct ContentView: View {
         //     DispatchQueue.main.async {
         //         self.companyLogo = Image("Logo")
         //     }
-        // }.resume() 
+        // }.resume()
         self.companyLogo = Image("Logo") // Set the company logo image from the assets catalog directly
     }
 }
