@@ -54,6 +54,8 @@ struct ContentView: View {
     @State private var selectedStation: Station = .retiro // Set the default selected station to Retiro
     
     @State private var lastRefreshTime: String = ""
+    
+    @Environment(\.colorScheme) var colorScheme
 
     /*
      * The Station enum represents the available train stations.
@@ -159,7 +161,24 @@ struct ContentView: View {
                            }
                            .frame(maxHeight: 150)
                            
-                           
+                           ZStack {
+                                                       // Background color for the refresh section
+                                                       Color.ferro.ignoresSafeArea()
+                                                       
+                                                       HStack {
+                                                           // Spacer() // Push the refresh button and text to the right
+                                                           Button(action: {
+                                                               fetchTrainData()
+                                                           }) {
+                                                               Image(systemName: "arrow.clockwise")
+                                                                   .font(.title2) // Adjust font size as needed
+                                                                   .foregroundColor(.white)
+                                                           }
+                                                           .buttonStyle(.borderedProminent)
+                                                        
+                                                       }
+                                                   }
+                                                   .frame(maxHeight: 60)
 
                            if isLoading { // Display a loading indicator while fetching data
                                ProgressView()
