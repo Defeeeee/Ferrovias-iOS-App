@@ -112,6 +112,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DD2178472C028FF20024F332 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0186D282EF365FC8796F5CDDF3A73027 /* Tag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tag.swift; path = Sources/Tag.swift; sourceTree = "<group>"; };
 		028D3261619347FA17517E2364917871 /* SimpleDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleDictionary.swift; path = Sources/SimpleDictionary.swift; sourceTree = "<group>"; };
@@ -538,6 +551,7 @@
 				21E20638646E6FC847C577B8D1891671 /* Sources */,
 				B7E4CF10A9F0FE72E953B718A7151B19 /* Frameworks */,
 				7987F1310F7EDC260ADD0E7C8D0D4A64 /* Resources */,
+				DD2178472C028FF20024F332 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
@@ -594,7 +608,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastSwiftUpdateCheck = 1500;
+				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
@@ -1065,7 +1079,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FB391E5C640D1F7FD296DA0ED6E7FADF /* Pods-Ferrovias.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1177,7 +1190,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 758336CE5E65F10A6FD687888AAF9088 /* Pods-Ferrovias.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;

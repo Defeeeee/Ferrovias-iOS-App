@@ -8,8 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		6A7355FFC72BADDD54D44E25 /* Pods_FerroviasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CD991D4CB88F281F5D9937E /* Pods_FerroviasTests.framework */; };
-		8A4C8DB9DCF2E7C7078E8511 /* Pods_Ferrovias.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EAE2E99A674B53CF19F80F /* Pods_Ferrovias.framework */; };
+		DD7087C32C02AF5200B93351 /* Pods_Ferrovias.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EAE2E99A674B53CF19F80F /* Pods_Ferrovias.framework */; };
+		DD7087C42C02AF5200B93351 /* Pods_Ferrovias.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19EAE2E99A674B53CF19F80F /* Pods_Ferrovias.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DDA1B1FFAF84DBA7928A45FA /* Pods_Ferrovias_FerroviasUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21CE57BC60370A83BD97C1D2 /* Pods_Ferrovias_FerroviasUITests.framework */; };
+		DDD4CB1C2C02963B001B51CD /* WFerroviasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD4CB1B2C02963B001B51CD /* WFerroviasApp.swift */; };
+		DDD4CB1E2C02963B001B51CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD4CB1D2C02963B001B51CD /* ContentView.swift */; };
+		DDD4CB202C02963C001B51CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDD4CB1F2C02963C001B51CD /* Assets.xcassets */; };
+		DDD4CB232C02963C001B51CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDD4CB222C02963C001B51CD /* Preview Assets.xcassets */; };
+		DDD4CB2D2C02963D001B51CD /* WFerrovias_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD4CB2C2C02963D001B51CD /* WFerrovias_Watch_AppTests.swift */; };
+		DDD4CB372C02963D001B51CD /* WFerrovias_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD4CB362C02963D001B51CD /* WFerrovias_Watch_AppUITests.swift */; };
+		DDD4CB392C02963D001B51CD /* WFerrovias_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD4CB382C02963D001B51CD /* WFerrovias_Watch_AppUITestsLaunchTests.swift */; };
+		DDD4CB472C0296AE001B51CD /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = DDD4CB462C0296AE001B51CD /* SwiftSoup */; };
 		DDF760B42BF7FCED0028E846 /* FerroviasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF760B32BF7FCED0028E846 /* FerroviasApp.swift */; };
 		DDF760B62BF7FCED0028E846 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF760B52BF7FCED0028E846 /* ContentView.swift */; };
 		DDF760B82BF7FCEF0028E846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF760B72BF7FCEF0028E846 /* Assets.xcassets */; };
@@ -20,6 +29,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		DDD4CB292C02963D001B51CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDF760A82BF7FCED0028E846 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDD4CB182C02963B001B51CD;
+			remoteInfo = "WFerrovias Watch App";
+		};
+		DDD4CB332C02963D001B51CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDF760A82BF7FCED0028E846 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDD4CB182C02963B001B51CD;
+			remoteInfo = "WFerrovias Watch App";
+		};
 		DDF760C12BF7FCEF0028E846 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DDF760A82BF7FCED0028E846 /* Project object */;
@@ -36,6 +59,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DD7087C52C02AF5200B93351 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DD7087C42C02AF5200B93351 /* Pods_Ferrovias.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		18BA9635BE9E24370C7CF24F /* Pods-FerroviasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FerroviasTests.debug.xcconfig"; path = "Target Support Files/Pods-FerroviasTests/Pods-FerroviasTests.debug.xcconfig"; sourceTree = "<group>"; };
 		19EAE2E99A674B53CF19F80F /* Pods_Ferrovias.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ferrovias.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +84,17 @@
 		9C308F9F486F5F00E2B5D7D3 /* Pods-Ferrovias.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ferrovias.release.xcconfig"; path = "Target Support Files/Pods-Ferrovias/Pods-Ferrovias.release.xcconfig"; sourceTree = "<group>"; };
 		B33030CCB07D7311AA651B08 /* Pods-Ferrovias-FerroviasUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ferrovias-FerroviasUITests.release.xcconfig"; path = "Target Support Files/Pods-Ferrovias-FerroviasUITests/Pods-Ferrovias-FerroviasUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DD900DBB2BF806B300F5984B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DDD4CB192C02963B001B51CD /* WFerrovias Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WFerrovias Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD4CB1B2C02963B001B51CD /* WFerroviasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WFerroviasApp.swift; sourceTree = "<group>"; };
+		DDD4CB1D2C02963B001B51CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DDD4CB1F2C02963C001B51CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDD4CB222C02963C001B51CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DDD4CB282C02963D001B51CD /* WFerrovias Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WFerrovias Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD4CB2C2C02963D001B51CD /* WFerrovias_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WFerrovias_Watch_AppTests.swift; sourceTree = "<group>"; };
+		DDD4CB322C02963D001B51CD /* WFerrovias Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WFerrovias Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD4CB362C02963D001B51CD /* WFerrovias_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WFerrovias_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		DDD4CB382C02963D001B51CD /* WFerrovias_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WFerrovias_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DDD4CB482C02A152001B51CD /* WFerrovias-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "WFerrovias-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		DDF760B02BF7FCED0028E846 /* Ferrovias.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ferrovias.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDF760B32BF7FCED0028E846 /* FerroviasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FerroviasApp.swift; sourceTree = "<group>"; };
 		DDF760B52BF7FCED0028E846 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,11 +108,33 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DDD4CB162C02963B001B51CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD4CB472C0296AE001B51CD /* SwiftSoup in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD4CB252C02963D001B51CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD4CB2F2C02963D001B51CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DDF760AD2BF7FCED0028E846 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A4C8DB9DCF2E7C7078E8511 /* Pods_Ferrovias.framework in Frameworks */,
+				DD7087C32C02AF5200B93351 /* Pods_Ferrovias.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,12 +167,52 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DDD4CB1A2C02963B001B51CD /* WFerrovias Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				DDD4CB482C02A152001B51CD /* WFerrovias-Watch-App-Info.plist */,
+				DDD4CB1B2C02963B001B51CD /* WFerroviasApp.swift */,
+				DDD4CB1D2C02963B001B51CD /* ContentView.swift */,
+				DDD4CB1F2C02963C001B51CD /* Assets.xcassets */,
+				DDD4CB212C02963C001B51CD /* Preview Content */,
+			);
+			path = "WFerrovias Watch App";
+			sourceTree = "<group>";
+		};
+		DDD4CB212C02963C001B51CD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DDD4CB222C02963C001B51CD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DDD4CB2B2C02963D001B51CD /* WFerrovias Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDD4CB2C2C02963D001B51CD /* WFerrovias_Watch_AppTests.swift */,
+			);
+			path = "WFerrovias Watch AppTests";
+			sourceTree = "<group>";
+		};
+		DDD4CB352C02963D001B51CD /* WFerrovias Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DDD4CB362C02963D001B51CD /* WFerrovias_Watch_AppUITests.swift */,
+				DDD4CB382C02963D001B51CD /* WFerrovias_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "WFerrovias Watch AppUITests";
+			sourceTree = "<group>";
+		};
 		DDF760A72BF7FCED0028E846 = {
 			isa = PBXGroup;
 			children = (
 				DDF760B22BF7FCED0028E846 /* Ferrovias */,
 				DDF760C32BF7FCEF0028E846 /* FerroviasTests */,
 				DDF760CD2BF7FCEF0028E846 /* FerroviasUITests */,
+				DDD4CB1A2C02963B001B51CD /* WFerrovias Watch App */,
+				DDD4CB2B2C02963D001B51CD /* WFerrovias Watch AppTests */,
+				DDD4CB352C02963D001B51CD /* WFerrovias Watch AppUITests */,
 				DDF760B12BF7FCED0028E846 /* Products */,
 				DEBF3CCB36CB2A14D5BD00A4 /* Pods */,
 				6342085A363D2FD56E1B0C7A /* Frameworks */,
@@ -115,6 +225,9 @@
 				DDF760B02BF7FCED0028E846 /* Ferrovias.app */,
 				DDF760C02BF7FCEF0028E846 /* FerroviasTests.xctest */,
 				DDF760CA2BF7FCEF0028E846 /* FerroviasUITests.xctest */,
+				DDD4CB192C02963B001B51CD /* WFerrovias Watch App.app */,
+				DDD4CB282C02963D001B51CD /* WFerrovias Watch AppTests.xctest */,
+				DDD4CB322C02963D001B51CD /* WFerrovias Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,6 +285,62 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DDD4CB182C02963B001B51CD /* WFerrovias Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDD4CB3D2C02963D001B51CD /* Build configuration list for PBXNativeTarget "WFerrovias Watch App" */;
+			buildPhases = (
+				DDD4CB152C02963B001B51CD /* Sources */,
+				DDD4CB162C02963B001B51CD /* Frameworks */,
+				DDD4CB172C02963B001B51CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WFerrovias Watch App";
+			packageProductDependencies = (
+				DDD4CB462C0296AE001B51CD /* SwiftSoup */,
+			);
+			productName = "WFerrovias Watch App";
+			productReference = DDD4CB192C02963B001B51CD /* WFerrovias Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDD4CB272C02963D001B51CD /* WFerrovias Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDD4CB402C02963D001B51CD /* Build configuration list for PBXNativeTarget "WFerrovias Watch AppTests" */;
+			buildPhases = (
+				DDD4CB242C02963D001B51CD /* Sources */,
+				DDD4CB252C02963D001B51CD /* Frameworks */,
+				DDD4CB262C02963D001B51CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDD4CB2A2C02963D001B51CD /* PBXTargetDependency */,
+			);
+			name = "WFerrovias Watch AppTests";
+			productName = "WFerrovias Watch AppTests";
+			productReference = DDD4CB282C02963D001B51CD /* WFerrovias Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DDD4CB312C02963D001B51CD /* WFerrovias Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDD4CB432C02963D001B51CD /* Build configuration list for PBXNativeTarget "WFerrovias Watch AppUITests" */;
+			buildPhases = (
+				DDD4CB2E2C02963D001B51CD /* Sources */,
+				DDD4CB2F2C02963D001B51CD /* Frameworks */,
+				DDD4CB302C02963D001B51CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDD4CB342C02963D001B51CD /* PBXTargetDependency */,
+			);
+			name = "WFerrovias Watch AppUITests";
+			productName = "WFerrovias Watch AppUITests";
+			productReference = DDD4CB322C02963D001B51CD /* WFerrovias Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		DDF760AF2BF7FCED0028E846 /* Ferrovias */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDF760D42BF7FCEF0028E846 /* Build configuration list for PBXNativeTarget "Ferrovias" */;
@@ -181,6 +350,7 @@
 				DDF760AD2BF7FCED0028E846 /* Frameworks */,
 				DDF760AE2BF7FCED0028E846 /* Resources */,
 				B422E183A19A26287BF37FCE /* [CP] Embed Pods Frameworks */,
+				DD7087C52C02AF5200B93351 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -240,6 +410,17 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					DDD4CB182C02963B001B51CD = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					DDD4CB272C02963D001B51CD = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = DDD4CB182C02963B001B51CD;
+					};
+					DDD4CB312C02963D001B51CD = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = DDD4CB182C02963B001B51CD;
+					};
 					DDF760AF2BF7FCED0028E846 = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -272,11 +453,37 @@
 				DDF760AF2BF7FCED0028E846 /* Ferrovias */,
 				DDF760BF2BF7FCEF0028E846 /* FerroviasTests */,
 				DDF760C92BF7FCEF0028E846 /* FerroviasUITests */,
+				DDD4CB182C02963B001B51CD /* WFerrovias Watch App */,
+				DDD4CB272C02963D001B51CD /* WFerrovias Watch AppTests */,
+				DDD4CB312C02963D001B51CD /* WFerrovias Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DDD4CB172C02963B001B51CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD4CB232C02963C001B51CD /* Preview Assets.xcassets in Resources */,
+				DDD4CB202C02963C001B51CD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD4CB262C02963D001B51CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD4CB302C02963D001B51CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DDF760AE2BF7FCED0028E846 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -406,6 +613,32 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DDD4CB152C02963B001B51CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD4CB1E2C02963B001B51CD /* ContentView.swift in Sources */,
+				DDD4CB1C2C02963B001B51CD /* WFerroviasApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD4CB242C02963D001B51CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD4CB2D2C02963D001B51CD /* WFerrovias_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD4CB2E2C02963D001B51CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD4CB392C02963D001B51CD /* WFerrovias_Watch_AppUITestsLaunchTests.swift in Sources */,
+				DDD4CB372C02963D001B51CD /* WFerrovias_Watch_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DDF760AC2BF7FCED0028E846 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -435,6 +668,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		DDD4CB2A2C02963D001B51CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDD4CB182C02963B001B51CD /* WFerrovias Watch App */;
+			targetProxy = DDD4CB292C02963D001B51CD /* PBXContainerItemProxy */;
+		};
+		DDD4CB342C02963D001B51CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDD4CB182C02963B001B51CD /* WFerrovias Watch App */;
+			targetProxy = DDD4CB332C02963D001B51CD /* PBXContainerItemProxy */;
+		};
 		DDF760C22BF7FCEF0028E846 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DDF760AF2BF7FCED0028E846 /* Ferrovias */;
@@ -448,6 +691,158 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		DDD4CB3E2C02963D001B51CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 73D7XMRQAB;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WFerrovias-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = WFerrovias;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = defee.Ferrovias;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = defee.Ferrovias.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		DDD4CB3F2C02963D001B51CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 73D7XMRQAB;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WFerrovias-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = WFerrovias;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = defee.Ferrovias;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = defee.Ferrovias.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+		DDD4CB412C02963D001B51CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73D7XMRQAB;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "defee.WFerrovias-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WFerrovias Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WFerrovias Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		DDD4CB422C02963D001B51CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73D7XMRQAB;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "defee.WFerrovias-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WFerrovias Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WFerrovias Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+		DDD4CB442C02963D001B51CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73D7XMRQAB;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "defee.WFerrovias-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "WFerrovias Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		DDD4CB452C02963D001B51CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73D7XMRQAB;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "defee.WFerrovias-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "WFerrovias Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
 		DDF760D22BF7FCEF0028E846 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -506,6 +901,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -562,6 +958,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -583,6 +980,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -614,6 +1012,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -712,6 +1111,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DDD4CB3D2C02963D001B51CD /* Build configuration list for PBXNativeTarget "WFerrovias Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDD4CB3E2C02963D001B51CD /* Debug */,
+				DDD4CB3F2C02963D001B51CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDD4CB402C02963D001B51CD /* Build configuration list for PBXNativeTarget "WFerrovias Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDD4CB412C02963D001B51CD /* Debug */,
+				DDD4CB422C02963D001B51CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDD4CB432C02963D001B51CD /* Build configuration list for PBXNativeTarget "WFerrovias Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDD4CB442C02963D001B51CD /* Debug */,
+				DDD4CB452C02963D001B51CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DDF760AB2BF7FCED0028E846 /* Build configuration list for PBXProject "Ferrovias" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -760,6 +1186,14 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DDD4CB462C0296AE001B51CD /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDF760DD2BF7FD710028E846 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DDF760A82BF7FCED0028E846 /* Project object */;
 }
