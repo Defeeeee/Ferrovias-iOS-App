@@ -201,7 +201,7 @@ struct ContentView: View {
         }
     }
     
-    func fetchTrainData(isSwipe: Bool = false) {
+               func fetchTrainData(isSwipe: Bool = false) {
         if (!isSwipe) {
             isLoading = true
         }
